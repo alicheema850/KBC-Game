@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kon Bane Ga Crore Pati</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="stars"></div>
+
+    <main class="game-container">
+
+        <!-- TOP HEADER -->
+        <header class="topbar">
+
+            <div class="brand">
+
+                <div class="brand-ring">
+                    KB
+                </div>
+
+                <div>
+                    <h1>
+                        KON BANE GA
+                        <span>CRORE PATI</span>
+                    </h1>
+
+                    <p>
+                        THE ULTIMATE QUIZ CHALLENGE
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="live-badge">
+                <span></span>
+                LIVE QUIZ
+            </div>
+
+        </header>
+
+
+        <!-- GAME AREA -->
+        <section class="game-layout">
+
+            <!-- MAIN GAME -->
+            <section class="main-card">
+
+                <!-- PROGRESS -->
+                <div class="progress-wrap">
+
+                    <div class="progress-text">
+
+                        <span id="question-number">
+                            Question 1 of 8
+                        </span>
+
+                        <span id="progress-percent">
+                            12%
+                        </span>
+
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div id="progress-fill"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUESTION -->
+                <div class="question-card">
+
+                    <div class="question-glow"></div>
+
+                    <div class="question-label">
+                        QUESTION
+                    </div>
+
+                    <h2 id="question">
+                        Question will appear here
+                    </h2>
+
+                </div>
+
+
+                <!-- OPTIONS -->
+                <div class="options" id="options">
+
+                    <button
+                        class="option"
+                        id="optionA"
+                        onclick="checkAnswer('A')">
+
+                        <span class="letter">
+                            A
+                        </span>
+
+                        <span class="option-text">
+                            Option
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="option"
+                        id="optionB"
+                        onclick="checkAnswer('B')">
+
+                        <span class="letter">
+                            B
+                        </span>
+
+                        <span class="option-text">
+                            Option
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="option"
+                        id="optionC"
+                        onclick="checkAnswer('C')">
+
+                        <span class="letter">
+                            C
+                        </span>
+
+                        <span class="option-text">
+                            Option
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        class="option"
+                        id="optionD"
+                        onclick="checkAnswer('D')">
+
+                        <span class="letter">
+                            D
+                        </span>
+
+                        <span class="option-text">
+                            Option
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <!-- AMOUNT + RESULT -->
+                <div class="status-row">
+
+                    <div class="amount-box">
+
+                        <small>
+                            YOU HAVE WON
+                        </small>
+
+                        <strong id="amount">
+                            Rs. 0
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        id="result"
+                        class="result">
+                    </div>
+
+                </div>
+
+
+                <!-- RESTART -->
+                <button
+                    id="restart-btn"
+                    class="restart-btn"
+                    onclick="restartGame()">
+
+                    ↻ PLAY AGAIN
+
+                </button>
+
+            </section>
+
+
+            <!-- PRIZE LADDER -->
+            <aside class="prize-card">
+
+                <div class="prize-title">
+
+                    <span>
+                        🏆
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            PRIZE LADDER
+                        </h3>
+
+                        <p>
+                            Climb to 1 CRORE
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="ladder"
+                    id="ladder">
+
+                    <div data-step="7">
+                        <span>8</span>
+                        <b>Rs. 1 Crore</b>
+                    </div>
+
+                    <div data-step="6">
+                        <span>7</span>
+                        <b>Rs. 70 Lac</b>
+                    </div>
+
+                    <div data-step="5">
+                        <span>6</span>
+                        <b>Rs. 40 Lac</b>
+                    </div>
+
+                    <div data-step="4">
+                        <span>5</span>
+                        <b>Rs. 20 Lac</b>
+                    </div>
+
+                    <div data-step="3">
+                        <span>4</span>
+                        <b>Rs. 10 Lac</b>
+                    </div>
+
+                    <div data-step="2">
+                        <span>3</span>
+                        <b>Rs. 1 Lac</b>
+                    </div>
+
+                    <div data-step="1">
+                        <span>2</span>
+                        <b>Rs. 10,000</b>
+                    </div>
+
+                    <div data-step="0">
+                        <span>1</span>
+                        <b>Rs. 1,000</b>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+        <footer>
+            Good luck! Choose your answer carefully. 🎯
+        </footer>
+
+    </main>
+
+
+    <!-- CONFETTI -->
+    <div
+        id="confetti"
+        class="confetti-container">
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
